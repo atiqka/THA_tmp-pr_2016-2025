@@ -1,4 +1,4 @@
-### Thailand Temperature and Rainfall by Province (2016–2025)
+### THAILAND'S TEMPERATURE AND RAINFALL BY PROVINCES (2016–2025)
 
 Author: Atiq Kainan Ahmed. Email: atiqka@yahoo.com
 
@@ -99,16 +99,3 @@ The temperature is a mean of monthly means, and the rainfall is a mean over the 
 Moran's I is shown as optional diagnostics. Results depend on the spatial weights (Queen contiguity here).
 The Earth Engine project ID and the local file paths in the script are specific to one machine. Change them before running.
 
-## Workflow structure
-.
-
-├── thailand_temp_rainfall.py
-
-├── README.md
-
-└── (generated)
-
-    └── thailand_admin1_temp_rainfall_combined_2016-2025.png
-
-
-    
