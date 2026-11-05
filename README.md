@@ -2,19 +2,27 @@
 
 Author: Atiq Kainan Ahmed. Email: atiqka@yahoo.com
 
+
 This Python script uses Google Earth Engine (GEE) to calculate the average temperature and rainfall for each Thai province (Admin level 1) over 2016–2025. It tests the spatial pattern of both variables with Moran's I and exports a side-by-side map as a PNG.
 
 
 ## What it does
 
 Initializes Earth Engine with your Google Cloud project.
+
 Loads two climate datasets for 2016-01-01 to 2025-12-31:
-Temperature: ERA5-Land monthly aggregated 2 m air temperature (ECMWF/ERA5_LAND/MONTHLY_AGGR), averaged over all months.
-Rainfall: CHIRPS daily precipitation (UCSB-CHG/CHIRPS/DAILY), summed over the whole period.
+
+- Temperature: ERA5-Land monthly aggregated 2 m air temperature (ECMWF/ERA5_LAND/MONTHLY_AGGR), averaged over all months.
+
+- Rainfall: CHIRPS daily precipitation (UCSB-CHG/CHIRPS/DAILY), summed over the whole period.
+
 Loads Thailand province polygons from a GEE asset and calculates the mean value per province (reduceRegions, 5 km scale).
 Converts temperature from Kelvin to °C and rainfall to the plotted unit.
+
 Joins the results to a GADM province shapefile on NAME_1.
+
 Calculates Moran's I (Queen contiguity, row-standardized weights) for temperature and rainfall to check for spatial autocorrelation.
+
 Reprojects to Web Mercator (EPSG:3857) and plots two maps side by side: temperature (inferno_r) and rainfall (viridis_r), each with a horizontal colorbar.
 Saves the figure as a 300 dpi PNG.
 
