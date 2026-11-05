@@ -2,7 +2,7 @@
 
 Author: Atiq Kainan Ahmed. Email: atiqka@yahoo.com
 
-This Python script that uses Google Earth Engine (GEE) to calculate the average temperature and rainfall for each Thai province (Admin level 1) over 2016–2025. It tests the spatial pattern of both variables with Moran's I and exports a side-by-side map as a PNG.
+This Python script uses Google Earth Engine (GEE) to calculate the average temperature and rainfall for each Thai province (Admin level 1) over 2016–2025. It tests the spatial pattern of both variables with Moran's I and exports a side-by-side map as a PNG.
 
 
 ## What it does
@@ -18,7 +18,7 @@ Calculates Moran's I (Queen contiguity, row-standardized weights) for temperatur
 Reprojects to Web Mercator (EPSG:3857) and plots two maps side by side: temperature (inferno_r) and rainfall (viridis_r), each with a horizontal colorbar.
 Saves the figure as a 300 dpi PNG.
 
-Output is shown here. https://github.com/atiqka/THA_tmp-pr_2016-2025/blob/main/thailand_admin1_temp_rainfall_combined_2016-2025.png
+Output is shown here https://github.com/atiqka/THA_tmp-pr_2016-2025/blob/main/thailand_admin1_temp_rainfall_combined_2016-2025.png
 
 
 The script also prints Moran's I and the simulated p-value for each variable:
@@ -99,3 +99,14 @@ The temperature is a mean of monthly means, and the rainfall is a mean over the 
 Moran's I is shown as optional diagnostics. Results depend on the spatial weights (Queen contiguity here).
 The Earth Engine project ID and the local file paths in the script are specific to one machine. Change them before running.
 
+## License
+
+MIT License
+
+Copyright (c) 2026 Atiq Kainan Ahmed.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
