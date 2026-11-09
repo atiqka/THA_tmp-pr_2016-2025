@@ -2,6 +2,8 @@
 
 Author: Atiq Kainan Ahmed. Email: atiqka@yahoo.com
 
+Output is shown here https://github.com/atiqka/THA_tmp-pr_2016-2025/blob/main/thailand_admin1_temp_rainfall_combined_2016-2025.png
+
 
 This Python script uses Google Earth Engine (GEE) to calculate the average temperature and rainfall for each Thai province (Admin level 1) over 2016–2025. It tests the spatial pattern of both variables with Moran's I and exports a side-by-side map as a PNG.
 
@@ -25,9 +27,6 @@ Calculates Moran's I (Queen contiguity, row-standardized weights) for temperatur
 
 Reprojects to Web Mercator (EPSG:3857) and plots two maps side by side: temperature (inferno_r) and rainfall (viridis_r), each with a horizontal colorbar.
 Saves the figure as a 300 dpi PNG.
-
-Output is shown here https://github.com/atiqka/THA_tmp-pr_2016-2025/blob/main/thailand_admin1_temp_rainfall_combined_2016-2025.png
-
 
 The script also prints Moran's I and the simulated p-value for each variable:
 
